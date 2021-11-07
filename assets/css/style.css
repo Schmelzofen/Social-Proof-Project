@@ -138,3 +138,49 @@ main section{
 .lgm{
     color:hsl(300, 24%, 96%);
 }
+
+/* Mediaquerries */
+
+@media only screen and (max-width: 375px){
+    main{
+        background: url(../img/bg-pattern-top-mobile.svg) top left no-repeat, url(../img/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    }
+    main section{
+        flex-direction: column;
+    }
+    #containerLeft{
+        width: 100%;
+        text-align: center;
+        padding: 0 0 0 0%;
+    }
+    #containerLeft h1{
+        font-size: 2rem;
+        padding: 0 0 3% 0;
+    }
+    #containerLeft p{
+        width: 100%;
+        padding:3% 3%;
+        font-size: 1rem;
+    }
+    #containerRight{
+        padding: 0 0 20% 3%;
+    }
+    #containerRight div{
+        font-size: 12px;
+        margin: 3% 0%;
+        width: 350px;
+    }
+    #containerRight div:nth-of-type(1){
+        margin-left: 0px;
+    }
+    
+    #containerRight div:nth-of-type(2){
+        margin-left: 0px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 0 10%;
+    }
+}
