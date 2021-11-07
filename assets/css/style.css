@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+/* Styles
+- Mobile: 375px
+- Desktop: 1440px
+## Colors
+### Primary
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+### Neutral
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+- Font size: 15px
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700
+======= */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Spartan;
+}
+
+/* Main */
+
+main{
+    background: url(../img/bg-pattern-top-desktop.svg) left no-repeat;
+    background: url(../img/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+}
+
+main section{
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10% 0 0 0;
+}
+
+/* left main container */
+
+#containerLeft{
+    width: 30%;
+}
+
+#containerLeft h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    padding: 0 0 3% 0;
+}
+
+#containerLeft p{
+    color: hsl(303, 10%, 53%);
+    line-height: 24px;
+    width: 500px;
+}
+
+/* right main container */
+
+#containerRight p{
+    padding: 5% 0;
+    color: hsl(300, 43%, 22%);
+}
+
+#containerRight p:before{
+    content: url(../img/icon-star.svg) url(../img/icon-star.svg) url(../img/icon-star.svg) url(../img/icon-star.svg) url(../img/icon-star.svg) " ";
+}
+
+#containerRight div{
+    background-color: hsl(300, 24%, 96%);
+    margin: 4% 0;
+    width: 425px;
+    border-radius: 10px;
+}
+
+#containerRight div p{
+    padding: 5% 10%;
+}
+
+#containerRight div:nth-of-type(1){
+    margin-left: -100px;
+}
+
+#containerRight div:nth-of-type(2){
+    margin-left: -50px;
+}
+
+/* bottom Container */
+
+#bottomContainer{
+    padding: 15% 0 10% 0;
+    justify-content: flex-start;
+}
+
+#bottomContainer div{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 5% 0;
+}
+
+#bottomContainer img{
+    border-radius: 50%;
+    margin: 0 20px 0 15px;
+}
+
+#bottomContainer h2{
+    color: hsl(300, 24%, 96%);
+}
+
+#bottomContainer div p{
+    margin: 0 20px;
+}
+
+#firstBuyer{
+    position: relative;
+    bottom: 100px;
+}
+
+#secondBuyer{
+    position: relative;
+    bottom: 50px;
+}
+/* Classes */
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 0 10%;
+}
+
+.sp{
+    color:hsl(333, 80%, 67%);
+}
+.lgm{
+    color:hsl(300, 24%, 96%);
+}
