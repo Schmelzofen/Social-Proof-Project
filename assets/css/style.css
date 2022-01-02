@@ -17,7 +17,7 @@ White: hsl(0, 0%, 100%)
 - Weights: 400, 500, 700
 ======= */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -26,29 +26,29 @@ White: hsl(0, 0%, 100%)
 
 /* Main */
 
-main{
+main {
     background: url(../img/bg-pattern-top-desktop.svg) top left no-repeat, url(../img/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
 }
 
-main section{
+main section {
     align-items: flex-start;
     justify-content: space-around;
-    padding: 10% 0 0 0;
+    padding: 8% 0 0 0;
 }
 
 /* left main container */
 
-#containerLeft{
+#containerLeft {
     width: 30%;
 }
 
-#containerLeft h1{
+#containerLeft h1 {
     color: hsl(300, 43%, 22%);
     font-size: 3rem;
     padding: 0 0 3% 0;
 }
 
-#containerLeft p{
+#containerLeft p {
     color: hsl(303, 10%, 53%);
     line-height: 24px;
     width: 500px;
@@ -56,129 +56,145 @@ main section{
 
 /* right main container */
 
-#containerRight p{
+#containerRight p {
     padding: 5% 0;
     color: hsl(300, 43%, 22%);
 }
 
-#containerRight p:before{
+#containerRight p:before {
     content: url(../img/icon-star.svg) url(../img/icon-star.svg) url(../img/icon-star.svg) url(../img/icon-star.svg) url(../img/icon-star.svg) " ";
 }
 
-#containerRight div{
+#containerRight div {
     background-color: hsl(300, 24%, 96%);
     margin: 4% 0;
     width: 425px;
     border-radius: 10px;
 }
 
-#containerRight div p{
+#containerRight div p {
     padding: 5% 10%;
 }
 
-#containerRight div:nth-of-type(1){
+#containerRight div:nth-of-type(1) {
     margin-left: -100px;
 }
 
-#containerRight div:nth-of-type(2){
+#containerRight div:nth-of-type(2) {
     margin-left: -50px;
 }
 
 /* bottom Container */
 
-#bottomContainer{
-    padding: 15% 0 10% 0;
+#bottomContainer {
+    padding: 12% 0 0% 0;
     justify-content: flex-start;
 }
 
-#bottomContainer div{
+#bottomContainer div {
     background-color: hsl(300, 43%, 22%);
     border-radius: 10px;
     padding: 5% 0;
 }
 
-#bottomContainer img{
+#bottomContainer img {
     border-radius: 50%;
     margin: 0 20px 0 15px;
 }
 
-#bottomContainer h2{
+#bottomContainer h2 {
     color: hsl(300, 24%, 96%);
+    font-size: 2.2vh;
 }
 
-#bottomContainer div p{
-    margin: 0 20px;
+#bottomContainer div p {
+    margin: 0 10px;
 }
 
-#firstBuyer{
+#firstBuyer {
     position: relative;
     bottom: 100px;
 }
 
-#secondBuyer{
+#secondBuyer {
+    position: relative;
+    bottom: 75px;
+}
+
+#thirdBuyer {
     position: relative;
     bottom: 50px;
 }
+
 /* Classes */
 
-.flex{
+.flex {
     display: flex;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     margin: 0 10%;
 }
 
-.sp{
-    color:hsl(333, 80%, 67%);
+.sp {
+    color: hsl(333, 80%, 67%);
 }
-.lgm{
-    color:hsl(300, 24%, 96%);
+
+.lgm {
+    color: hsl(300, 24%, 96%);
 }
 
 /* Mediaquerries */
 
-@media only screen and (max-width: 600px){
-    main{
+@media only screen and (max-width: 600px) {
+    main {
         background: url(../img/bg-pattern-top-mobile.svg) top left no-repeat, url(../img/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
     }
-    main section{
+
+    main section {
         flex-direction: column;
     }
-    #containerLeft{
+
+    #containerLeft {
         width: 100%;
         text-align: center;
         padding: 0 0 0 0%;
     }
-    #containerLeft h1{
+
+    #containerLeft h1 {
         font-size: 2rem;
         padding: 0 0 3% 0;
     }
-    #containerLeft p{
+
+    #containerLeft p {
         width: 100%;
-        padding:3% 3%;
+        padding: 3% 3%;
         font-size: 1rem;
     }
-    #containerRight{
+
+    #containerRight {
         padding: 0 0 20% 0%;
         margin: 0 auto;
     }
-    #containerRight div{
+
+    #containerRight div {
         font-size: 12px;
         margin: 3% 0%;
         width: 350px;
     }
-    #containerRight div:nth-of-type(1){
+
+    #containerRight div:nth-of-type(1) {
         margin-left: 0px;
     }
-    
-    #containerRight div:nth-of-type(2){
+
+    #containerRight div:nth-of-type(2) {
         margin-left: 0px;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 25px;
@@ -186,44 +202,52 @@ main section{
     }
 }
 
-@media only screen and (max-width: 375px){
-    main{
+@media only screen and (max-width: 375px) {
+    main {
         background: url(../img/bg-pattern-top-mobile.svg) top left no-repeat, url(../img/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
     }
-    main section{
+
+    main section {
         flex-direction: column;
     }
-    #containerLeft{
+
+    #containerLeft {
         width: 100%;
         text-align: center;
         padding: 0 0 0 0%;
     }
-    #containerLeft h1{
+
+    #containerLeft h1 {
         font-size: 2rem;
         padding: 0 0 3% 0;
     }
-    #containerLeft p{
+
+    #containerLeft p {
         width: 100%;
-        padding:3% 3%;
+        padding: 3% 3%;
         font-size: 1rem;
     }
-    #containerRight{
+
+    #containerRight {
         padding: 0 0 20% 0%;
         margin: 0 auto;
     }
-    #containerRight div{
+
+    #containerRight div {
         font-size: 12px;
         margin: 3% 0%;
         width: 350px;
     }
-    #containerRight div:nth-of-type(1){
+
+    #containerRight div:nth-of-type(1) {
         margin-left: 0px;
     }
-    
-    #containerRight div:nth-of-type(2){
+
+    #containerRight div:nth-of-type(2) {
         margin-left: 0px;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 25px;
